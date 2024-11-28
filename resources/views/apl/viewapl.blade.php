@@ -22,6 +22,7 @@
                     <li>Masukkan Id dan Server akun game kamu</li>
                     <li>Pilih jumlah diamond yang kamu inginkan</li>
                     <li>Pilih metode pembayaran</li>
+                    <li>Masukan email untuk bukti pesanan dan riwayat pesanan</li>
                     <li>Konfirmasi pembelian kemudian melakukan pembayaran</li>
                     <li>Top Up telah selesai yeay</li>
                 </ol>
@@ -41,14 +42,80 @@
                     </div>
                 </div>
 
-                <div class="w-full h-auto">
+                <div class="w-full h-auto flex flex-col gap-3">
                     <div class="flex gap-4 items-center w-full h-auto">
                         <div class="rounded-full bg-[#63B619] flex justify-center items-center w-6 h-6 p-1">
                             <p class="font-semibold text-white">2</p>
                         </div>
-                        <p>Pilih Diamond</p>
+                        <p>Pilih Diamond :</p>
+                    </div>
+
+                    <div class="w-full h-auto grid grid-cols-3 gap-3">
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">11 Diamonds</p> 
+                        </div>
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">23 Diamonds</p> 
+                        </div>
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">50 Diamonds</p> 
+                        </div>
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">67 Diamonds</p> 
+                        </div>
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">80 Diamonds</p> 
+                        </div>
+                        <div class="col-span-1 w-full h-16 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex justify-center items-center gap-2">
+                            <img src="../img/icon_diamond.png" alt="diamond" class="w-[1.5em] h-[1.5em]" srcset="">
+                            <p class="font-semibold">100 Diamonds</p> 
+                        </div>
                     </div>
                 </div>
+
+                <div class="w-full h-auto flex flex-col gap-3">
+                    <div class="flex gap-4 items-center w-full h-auto">
+                        <div class="rounded-full bg-[#63B619] flex justify-center items-center w-6 h-6 p-1">
+                            <p class="font-semibold text-white">3</p>
+                        </div>
+                        <p>Pilih Metode Pembayaran :</p>
+                    </div>
+                    <div class="w-full h-auto flex flex-col gap-3">
+                        <div class="w-full h-14 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex items-center px-6">
+                            <div>BCA</div>
+                        </div>
+                        <div class="w-full h-14 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex items-center px-6">
+                            <div>DANA</div>
+                        </div>
+                        <div class="w-full h-14 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex items-center px-6">
+                            <div>QRIS</div>
+                        </div>
+                        <div class="w-full h-14 shadow-[0px_0px_1px_1px_#F1F1F1] lg:cursor-pointer hover:shadow-[0px_0px_1px_2px_#F1F1F1] bg-white rounded-lg flex items-center px-6">
+                            <div>ALFAMART</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full h-auto flex flex-col gap-3">
+                    <div class="flex gap-4 items-center w-full h-auto">
+                        <div class="rounded-full bg-[#63B619] flex justify-center items-center w-6 h-6 p-1">
+                            <p class="font-semibold text-white">4</p>
+                        </div>
+                       
+                        <div class="flex items-center w-full gap-4">
+                            <p>Email</p>
+                            <input type="text" placeholder="xyz@gmail.com" class="bg-gray-100 rounded-md w-full shadow-[0px_0px_1px_1px_#F1F1F1] focus:outline-gray-400 p-1" >
+                        </div>
+                    </div>
+                </div>
+
+                @livewire('modal-pesan')
             </div>
         </div>
     </div>
