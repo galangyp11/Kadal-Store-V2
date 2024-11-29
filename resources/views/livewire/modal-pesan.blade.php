@@ -26,10 +26,10 @@
 
                 <div class="w-full grid grid-cols-2 flex-1 items-end ">
                     <div class="col-span-1 pr-2">
-                        <button wire:click="closeModal" class="bg-red-500 rounded-lg w-full h-fit py-1 text-white font-semibold">Batal</button>
+                        <button wire:click="closeModal" class="bg-red-500 rounded-lg w-full active:brightness-[.97] active:scale-[.97] transition ease-in-out h-fit py-1 text-white font-semibold">Batal</button>
                     </div>
                     <div class="col-span-1 pl-2">
-                        <button class="bg-[#63B619] rounded-lg w-full h-fit py-1 text-white font-semibold">Bayar</button>
+                        <button class="bg-[#63B619] active:brightness-[.97] active:scale-[.97] transition ease-in-out rounded-lg w-full h-fit py-1 text-white font-semibold">Bayar</button>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
     @endif
 
     <div class="w-full h-auto flex justify-center items-center">
-        <button wire:click="openModal" class="rounded-lg bg-[#63B619] w-full h-10 text-white font-semibold hover:brightness-90">Pesan</button>
+        <button wire:click="openModal" class="rounded-lg bg-[#63B619] w-full h-10 active:brightness-[.97] active:scale-[.97] transition ease-in-out text-white font-semibold hover:brightness-90">Pesan</button>
     </div>
 
 </div>
