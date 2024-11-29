@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Apl;
 use App\Http\Requests\StoreAplRequest;
 use App\Http\Requests\UpdateAplRequest;
+use App\Models\Payment;
 
 class AplController extends Controller
 {
@@ -15,6 +16,7 @@ class AplController extends Controller
     {
      
         $apls = Apl::all();
+        // $payments = Payments::all();
      
         return view("home",["apls"=> $apls]);
     }
@@ -38,10 +40,12 @@ class AplController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Apl $apl)
+    public function show(Apl $apl, $id)
     {
-        $apl = Apl::find(1);
-        return view("apl.viewapl", ["apl" => $apl]);
+        $apl = Apl::findOrFail( $id );
+        $payments = Payment::all();
+        // $apl = Apl::get( $apl->id );
+        return view("apl.viewapl", ["apl" => $apl, 'payments'=> $payments]);
     }
 
     /**

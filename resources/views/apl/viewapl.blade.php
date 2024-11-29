@@ -117,7 +117,16 @@
                         <p>Pilih Metode Pembayaran :</p>
                     </div>
                     <div class="w-full h-auto flex flex-col gap-3">
+                        @foreach ( $payments as $payment )
                         <div class="w-full h-auto ">
+                            <input type="radio" id={{$payment->payment_name}} class="hidden peer" name="payment" value={{$payment->payment_name}} {{ old('payment') == '$payment->payment_name' ? 'checked' : '' }}>
+                            <label for={{$payment->payment_name}} class="w-full h-14 shadow-[0px_1px_0px_2px_#F1F1F1] lg:cursor-pointer active:brightness-[.97] active:scale-[.98] transition ease-in-out hover:shadow-[0px_0px_1px_1px_#63B619] peer-checked:shadow-[0px_0px_0px_1px_#63B619] bg-white rounded-lg flex items-center gap-4 px-6">
+                                <img src={{$payment->payment_icon}} alt="payment bca" class="w-auto h-[1.5em]" srcset="">
+                                <p class="font-semibold">{{$payment->payment_name}}</p> 
+                            </label>
+                        </div>
+                        @endforeach
+                        {{-- <div class="w-full h-auto ">
                             <input type="radio" id="bca" class="hidden peer" name="payment" value="bca" {{ old('payment') == 'bca' ? 'checked' : '' }}>
                             <label for="bca" class="w-full h-14 shadow-[0px_1px_0px_2px_#F1F1F1] lg:cursor-pointer active:brightness-[.97] active:scale-[.98] transition ease-in-out hover:shadow-[0px_0px_1px_1px_#63B619] peer-checked:shadow-[0px_0px_0px_1px_#63B619] bg-white rounded-lg flex items-center gap-4 px-6">
                                 <img src="../img/icon_bca.png" alt="payment bca" class="w-auto h-[1.5em]" srcset="">
@@ -144,7 +153,7 @@
                                 <img src="../img/icon_gopay.png" alt="payment gopay" class="w-auto h-[1.5em]" srcset="">
                                 <p class="font-semibold">GoPay</p> 
                             </label>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
 

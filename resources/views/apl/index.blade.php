@@ -4,7 +4,7 @@
         <div class="col-span-1 w-full h-fit flex justify-center items-center">
             <a href="{{route('apl.viewapl', $apl)}}">
                 <div class="lg:cursor-pointer group w-fit h-fit p-2 rounded-lg flex flex-col items-center gap-2">
-                    <div class="bg-gray-400 w-[5em] h-[5em] rounded-lg"></div>
+                    <img src={{$apl->apl_icon}} class="rounded-lg w-[5em] h-[5em] hover:scale-[1.03] active:scale-[.97] transition ease-in-out" alt="">
                     <p class="text-[#00371E] text-center group-hover:text-[#65B71A]">{{$apl->apl_name}}</p>
                 </div>
             </a>

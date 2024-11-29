@@ -11,9 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('apls', function (Blueprint $table) {
+        Schema::create('aplitems', function (Blueprint $table) {
             $table->id();
-            $table->string('app_name');
+            $table->string('id_apl');
+            $table->string('item_name');
+            $table->string('item_type');
+            $table->string('item_icon')->nullable();
+            $table->string('item_amount');
+            $table->string('item_price');
             $table->timestamps();
         });
     }
@@ -23,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('apls');
+        Schema::dropIfExists('aplitems');
     }
 };

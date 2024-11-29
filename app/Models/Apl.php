@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Apl extends Model
 {
     use HasFactory;
-    protected $fillable = ['apl_name'] ;   
+    protected $fillable = ['apl_name', 'apl_icon', 'created_at', 'updated_at'];  
 }

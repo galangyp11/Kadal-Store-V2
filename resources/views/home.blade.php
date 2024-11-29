@@ -13,6 +13,7 @@
     <div class="w-full h-fit flex justify-center items-center my-4">
         @include('apl.index')
     </div>
+    @dd($apls)
     @include('components.footer')
 </body>
 </html>
