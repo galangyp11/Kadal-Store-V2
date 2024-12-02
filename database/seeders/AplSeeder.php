@@ -13,9 +13,9 @@ class AplSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('apls')->insert([
-            ['name' => 'Electronics', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Furniture', 'created_at' => now(), 'updated_at' => now()],
-        ]);
+        // DB::table('apls')->insert([
+        //     ['name' => 'Electronics', 'created_at' => now(), 'updated_at' => now()],
+        //     ['name' => 'Furniture', 'created_at' => now(), 'updated_at' => now()],
+        // ]);
     }
 }

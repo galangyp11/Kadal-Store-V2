@@ -13,7 +13,7 @@ class PaymentSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('payments')->insert([
+        DB::table('payment')->insert([
             ['payment_name' => 'BCA', 'payment_icon'=> '../img/icon_bca.png', 'payment_tax' => '.10', 'created_at' => now(), 'updated_at' => now()],
             ['payment_name' => 'DANA', 'payment_icon'=> '../img/icon_dana.png', 'payment_tax' => '.11', 'created_at' => now(), 'updated_at' => now()],
             ['payment_name' => 'GOPAY', 'payment_icon'=> '../img/icon_gopay.png', 'payment_tax' => '.12', 'created_at' => now(), 'updated_at' => now()],

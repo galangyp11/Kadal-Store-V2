@@ -7,13 +7,14 @@
     @vite('resources/css/app.css')
     <title>Kadal Store</title>
 </head>
-<body class="bg-gray-50 lg:container">
+<body class="bg-gray-50 lg:container flex flex-col items-center justify-center">
     @include('components.navbar')
-    @include('components.banners')
-    <div class="w-full h-fit flex justify-center items-center my-4">
-        @include('apl.index')
+    <div class="w-[960px] h-auto flex flex-col justify-center items-center">
+        @include('components.banners')
+        <div class="w-full h-fit flex justify-center items-center my-4">
+            @include('apl.index')
+        </div>
     </div>
-    @dd($apls)
     @include('components.footer')
 </body>
 </html>

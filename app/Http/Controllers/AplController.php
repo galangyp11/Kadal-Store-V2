@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Apl;
 use App\Http\Requests\StoreAplRequest;
 use App\Http\Requests\UpdateAplRequest;
+use App\Models\AplItems;
 use App\Models\Payment;
+use Illuminate\Http\Request;
 
 class AplController extends Controller
 {
@@ -42,10 +44,12 @@ class AplController extends Controller
      */
     public function show(Apl $apl, $id)
     {
-        $apl = Apl::findOrFail( $id );
+        //$apl = Apl::with('aplitems')->findOrFail( $id );
+        $apl = Apl::find($id);
+        $items= AplItems::where('id_apl', $id)->get();
         $payments = Payment::all();
         // $apl = Apl::get( $apl->id );
-        return view("apl.viewapl", ["apl" => $apl, 'payments'=> $payments]);
+        return view("apl.viewapl", ["apl" => $apl, "items" => $items ,'payments'=> $payments]);
     }
 
     /**
@@ -70,5 +74,8 @@ class AplController extends Controller
     public function destroy(Apl $apl)
     {
         //
+    }
+    public function total(Request $request) {
+        $value = $request->input('value');
     }
 }

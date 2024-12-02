@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Apl extends Model
 {
     use HasFactory;
-    protected $fillable = ['apl_name', 'apl_icon', 'created_at', 'updated_at'];  
+    protected $fillable = ['apl_name', 'apl_icon', 'created_at', 'updated_at']; 
+    
+    public function aplitems() {
+        return $this->hasMany(AplItems::class,'id_apl','id');
+    }
 }
